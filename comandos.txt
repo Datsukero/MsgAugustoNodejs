@@ -1,0 +1,50 @@
+########################################### Obervações #######################################################
+--Você precisará abrir vários terminais de comandos do windows (cmd) para usar este projeto
+--Tenha em mente que você deve ter instalados no computador os programas: node.js e mongodb (baixe os instaladores na internet)
+--Todos os comandos aqui mostrados estão no livro base que estamos usando (disponível no drive da turma)
+
+########################################### PROJETO #######################################################
+--Para installar o express no projeto, use o terminal de comandos do windows (cmd) e digite:
+
+> cd C:/...../app-mongo
+> npm install express
+
+
+--Para installar o modulo de conexão com o mongodb no projeto, use o terminal de comandos do windows (cmd) e digite:
+> cd C:/...../app-mongo
+> npm install mongodb@2.2.33
+
+
+--Para installar o modulo de conversão de requisição para Json no projeto, use o terminal de comandos do windows (cmd) e digite:
+> cd C:/...../app-mongo
+> npm install body-parser
+
+
+########################################### MONGO DB #######################################################
+--Para criar um novo banco de dados no Mongo, levante o serviço do servidor do Mongo no computador. Use OUTRO terminal de comandos do windows (cmd) e digite:
+> mongod
+
+--Abra um NOVO terminal de comandos do windows (cmd) e digite:
+> mongo
+
+--Aguarde a conexão ser estabelecida e digite os comandos nativos do mongo para criar um banco novo:
+> use nome_do_seu_banco
+
+--Digite também o comando do Mongo para criar nova tabela (collection) no seu banco:
+> db.createCollection('mensagens')
+
+--Para ver os bancos de dados cadastrados no mongo, digite:
+> show dbs
+
+Para ver as collections (tabelas) de um banco, digite:
+> show collections
+
+
+########################################### TESTANDO #######################################################
+--Para rodar o servidor no computador, entre num novo terminal de comandos do windows (cmd) e digite:
+> cd C:/...../app-mongo
+> node server.js
+
+
+Para testar no navegador, digite na barra de endereços:
+localhost:8080/
